@@ -1,5 +1,5 @@
 /**
-* Class Item
+* Item Class
 * @author Dhanish Azam
 * @version 17.0.10
 * @since 2024/05/09
@@ -135,7 +135,7 @@ public class Item {
 @Override
   public boolean equals(Object obj){
     Item checkItem = (Item)obj;
-    
+
     return checkItem.getProductID() == this.productID; // returns if the two items are the same using their product IDs
   }
 

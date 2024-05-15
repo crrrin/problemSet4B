@@ -1,5 +1,5 @@
 /**
- * Class ItemManagement
+ * ItemManagement Class
  * @author Dhanish Azam
  * @version 17.0.10
  * @since 2024/05/09
