@@ -98,7 +98,7 @@ public class ItemManagement {
         return this.items.get(i);
       }
     }
-    return null;
+    return null; // return null if an object with the parameter cant be located
   }
 
   /**
@@ -351,7 +351,5 @@ public class ItemManagement {
           fileWriter.close(); //close the filewriter
       }
     }
-    
   }
-
 }
