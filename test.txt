@@ -1,0 +1,40 @@
+Gloves
+113 8.99 55 12
+Sneakers
+103 59.99 20 8
+Umbrella
+115 17.99 40 9
+Jacket
+107 79.99 15 3
+Dress
+108 49.99 35 7
+Ring
+118 49.99 20 5
+Socks
+120 6.99 45 10
+Wallet
+111 24.99 30 8
+Watch
+110 99.99 20 5
+Jeans
+102 39.99 30 5
+Necklace
+117 39.99 30 7
+Scarf
+114 12.99 25 6
+Backpack
+104 29.99 25 6
+Hat
+106 9.99 60 15
+T-Shirt
+101 19.99 50 10
+Earrings
+116 29.99 50 11
+Sunglasses
+105 14.99 40 12
+Bracelet
+119 19.99 35 8
+Boots
+109 69.99 10 2
+Belt
+112 14.99 45 10
