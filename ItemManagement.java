@@ -1,5 +1,7 @@
 /**
  * ItemManagement Class
+ * Manages a database of Item objects and provides methods to add, 
+ * sell, search, display, load, and save item data.
  * @author Dhanish Azam
  * @version 17.0.10
  * @since 2024/05/09
@@ -229,7 +231,7 @@ public class ItemManagement {
   }
 
   /**
-   * merging method for mergeSortHelper
+   * merging method for mergeSortHelper method
    * @param left Left index
    * @param right Right index
    * @param og original arraylist

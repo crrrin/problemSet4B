@@ -1,18 +1,21 @@
 /**
-* Item Class
+* Class Item
+* Represents an item with a name, product ID, unit price, current stock, and restock level.
+* Provides methods to get and set Item information, a method to 
+* check if items are equal, and to convert the item to string.
 * @author Dhanish Azam
 * @version 17.0.10
 * @since 2024/05/09
 */
 
 public class Item {
-  private String productName;
-  private int productID;
-  private double unitPrice;
-  private int stock;
-  private int restockLevel;
+  private String productName; // name of product
+  private int productID; // ID of product
+  private double unitPrice; // unit price of product
+  private int stock; // stock of product
+  private int restockLevel; // the minimum threshold that triggers an automatic restock
 
-  private final int originalStock;
+  private final int originalStock;  // the original stock- this is for restocking to the original amount when it drops below the restock level
   
   /**
    * creates an Item object and stores the name, product ID, unit price, current stock, and restock level of a given product.
@@ -56,7 +59,10 @@ public class Item {
       this.stock = stock;
       this.originalStock = stock;
 
-    this.restockLevel = -1; // if restocklevel is not stated then it will be assumed that this item will never restock, and be set to -1
+    // if restocklevel is not stated then it will be assumed that this item will never restock, and be set to -1
+    // because stock can never be negative, this means a restock will never trigger, as stock cant be less than -1
+    this.restockLevel = -1; 
+  
   } 
 
   /**
