@@ -287,11 +287,11 @@ public class ItemManagement {
     while (leftIndex < leftSize) { // If left index was the one that ended the prior while loop, this doesn't run
                                    // because its already false
       og.set(ogIndex++, left.get(leftIndex++));
-      // og[ogIndex++] = left[leftIndex++];
+
     }
     while (rightIndex < rightSize) {
       og.set(ogIndex++, right.get(rightIndex++));
-      // og[ogIndex++] = right[rightIndex++];
+
     }
 
   }
@@ -309,7 +309,7 @@ public class ItemManagement {
 
       while (fileScanner.hasNext()) {
 
-        // adds items from the file following the format
+        // adds items from the file following the format:
         // <name>
         // <id> <unit price> <stock> <restock level>
         addItem(new Item(fileScanner.nextLine(), fileScanner.nextInt(), fileScanner.nextDouble(), fileScanner.nextInt(), fileScanner.nextInt()));
@@ -320,7 +320,7 @@ public class ItemManagement {
     } catch (Exception e) {
     } finally {
       if (fileScanner != null){
-        fileScanner.close();
+        fileScanner.close(); // closer filescanner
       }
     }
   }
@@ -342,13 +342,13 @@ public class ItemManagement {
       }
 
     try {
-      fileWriter = new PrintWriter(new FileWriter(fileName, false));
+      fileWriter = new PrintWriter(new FileWriter(fileName, false)); //dont append- overwrite the file
 
       fileWriter.print(toWrite);
       
     } catch (Exception e) {} finally {
       if (fileWriter != null) {
-          fileWriter.close();
+          fileWriter.close(); //close the filewriter
       }
     }
     
