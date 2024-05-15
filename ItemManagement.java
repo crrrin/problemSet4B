@@ -35,8 +35,8 @@ public class ItemManagement {
   }
 
   /**
-   * Adds an item to the argument Item arraylist. If said item already exists, then sum their stocks and update said item.
-   * @param item the item to be added to the argument Item arraylist
+   * Adds an item to the argument Item database. If said item already exists, then sum their stocks and update said item.
+   * @param item the item to be added to the argument Item database
    */
   public void addItem(Item item) {
     if (!this.items.contains(item)) { // if the item is new, add it
@@ -250,6 +250,8 @@ public class ItemManagement {
     while (leftIndex < leftSize && rightIndex < rightSize) {
       switch (type) {
         case "Name":
+          // if the object name at the left index is lexicographically prioritized, take the next value from the left object
+          // if not, take the next object from the right index
           if (left.get(leftIndex).getProductName().compareToIgnoreCase(right.get(rightIndex).getProductName()) < 0) {
             og.set(ogIndex++, left.get(leftIndex++));
           } else {
